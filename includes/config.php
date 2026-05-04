@@ -8,15 +8,17 @@ $isLocal = (
 );
 
 if ($isLocal) {
+    // ---------- LOCAL (XAMPP) ----------
     define('DB_HOST', 'localhost');
     define('DB_USER', 'root');
     define('DB_PASS', '');
     define('DB_NAME', 'contacts');
 } else {
+    // ---------- PRODUCTION (contacts.zambezidiamond.co.zm) ----------
     define('DB_HOST', 'localhost');
-    define('DB_USER', 'root');
-    define('DB_PASS', '');
-    define('DB_NAME', 'contacts');
+    define('DB_USER', 'readiams_contacts');
+    define('DB_PASS', 'contacts_zdg');
+    define('DB_NAME', 'readiams_contacts');
 }
 
 // Auto-compute the URL prefix from the script's directory.
